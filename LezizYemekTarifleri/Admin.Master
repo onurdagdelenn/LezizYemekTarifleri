@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="LezizYemekTarifleri.Admin" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .auto-style3 {
+            width: 200px;
+            float: left;
+            height: auto;
+        }
+
+        .auto-style4 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: honeydew;">
+           <asp:Image ID="Image1" runat="server" height="142px" ImageUrl="~/resimler/admin_header.png" Width="694px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;">
+            &nbsp;
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: auto;">
+            <div style="background-color: lightsalmon;" class="auto-style3">
+                <table class="auto-style4">
+                    <tr>
+                        <td><strong>Menüler</strong></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid; border-width: 1px 1px 1px 7px; border-color: #C0C0C0 #C0C0C0 #C0C0C0 #FF3300"> <a href="Kategoriler.aspx"> Kategoriler</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid; border-width: 1px 1px 1px 7px; border-color: #C0C0C0 #C0C0C0 #C0C0C0 #FF3300"> <a href="Yemekler.aspx">Yemekler</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid; border-width: 1px 1px 1px 7px; border-color: #C0C0C0 #C0C0C0 #C0C0C0 #FF3300"> <a href="Yorumlar.aspx">Yorumlar</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid; border-width: 1px 1px 1px 7px; border-color: #C0C0C0 #C0C0C0 #C0C0C0 #FF3300"><a href="Mesajlar.aspx"> Mesajlar</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid; border-width: 1px 1px 1px 7px; border-color: #C0C0C0 #C0C0C0 #C0C0C0 #FF3300"> <a href="GununYemegiAdmin.aspx"> Günün Yemeği</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid; border-width: 1px 1px 1px 7px; border-color: #C0C0C0 #C0C0C0 #C0C0C0 #FF3300"> <a href="Tarifler.aspx">Tarifler </a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: solid; border-width: 1px 1px 1px 7px; border-color: #C0C0C0 #C0C0C0 #C0C0C0 #FF3300">Hakkımızda</td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </div>
+            <div style="width: 450px; float: left; height: auto; background-color: lightsalmon; margin-left: 50px">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+
+
+
+    </form>
+</body>
+</html>
